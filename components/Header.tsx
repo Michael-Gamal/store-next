@@ -27,6 +27,9 @@ const Header = () => {
         <div className="">
           <ul className="flex justify-between items-center gap-10">
             <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
               <Link href="/collection">Collection</Link>
             </li>
             <li>
