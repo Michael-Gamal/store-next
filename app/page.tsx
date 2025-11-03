@@ -1,13 +1,19 @@
 import BestSaller from "@/components/BestSaller";
 import Hero from "../components/Hero";
 import Collection from "@/components/Collection";
+import Modiweek from "@/components/Modiweek";
+import Sustainability from "@/components/Sustainability";
+import FollowUs from "@/components/FollowUs";
 
 export default function Home() {
   return (
-    <div className=" text-4xl mx-auto">
+    <main className="mx-auto">
       <Hero />
       <BestSaller />
       <Collection />
-    </div>
+      <Modiweek />
+      <Sustainability />
+      <FollowUs />
+    </main>
   );
 }

@@ -14,13 +14,14 @@ const Header = () => {
         <p className="">Enjoy Free Shipping On All Orders</p>
       </div>
       <nav className=" flex justify-between items-center px-15 py-2 ">
-        <div className="w-[184px] h-[46px]">
-          <Link href="./">
+        <div className="">
+          <Link href="./" className="block w-[184px] h-[46px] relative">
             <Image 
               src={logo}
-              width={184}
-              height={46}
+              fill
+              priority
               alt="logo"
+              className="object-contain"  
             />
           </Link>
         </div>
@@ -47,10 +48,20 @@ const Header = () => {
           </ul>
         </div>
         <div className="flex items-center justify-center gap-5">
+        <button className="cursor-pointer">
           <IoSearchSharp />
+        </button>
+        <button className="cursor-pointer">
           <FaRegUser />
+        </button>
+        <button className="cursor-pointer">
           <CiHeart />
+        </button>
+        <button className="cursor-pointer relative">
           <SlBag />
+          {/* مثال لعداد العربة */}
+          <span className="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-[15px] h-[15px]">2</span>
+        </button>
         </div>
       </nav>
     </header>

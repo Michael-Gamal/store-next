@@ -5,15 +5,18 @@ import { FaPlus } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="relative">
-
-        <Image  className="w-full"
+    <section className="relative  ">
+        <div className="relative w-full h-screen">
+        <Image 
+            className="object-cover w-full h-full"
             src={hero}
-            width={1440}
-            height={600}
+            fill
+            priority
             alt="hero"
         />
-        <div className=" absolute bottom-[100px] left-[100px]  ">
+
+        </div>
+        <div className=" absolute bottom-25 left-25  ">
             <div className="flex flex-col gap-7">
             <p className="leading-loose">
                 Elegance in simplicity, <br /> Earth’s harmony
@@ -23,7 +26,7 @@ const Hero = () => {
             </Link>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -13,7 +13,7 @@ const Footer = () => {
           <input type="email" placeholder="Enter Your Email Address" className="w-full h-full border-none outline-none" />
           <FaArrowRight />
         </div>
-        <div className="pt-5 w-[496px] flex">
+        <div className="pt-5 w-full max-w-[496px] flex">
           <input className="w-5" type="checkbox" name="" id="d"  />
           <label className="p-2" htmlFor="d">By Submittng your email, you agree to receive advertising emails  from Modimal.</label>
         </div>
