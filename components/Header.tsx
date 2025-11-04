@@ -5,6 +5,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { SlBag } from "react-icons/sl";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
 
@@ -13,8 +14,18 @@ const Header = () => {
       <div className="flex justify-center items-center bg-primary h-[30px] text-white text-[14px]">
         <p className="">Enjoy Free Shipping On All Orders</p>
       </div>
-      <nav className=" flex justify-between items-center px-15 py-2 ">
-        <div className="">
+      <nav className=" flex justify-between md:justify-center items-center gap-3 px-6 py-2 ">
+          <div className="flex flex-1 items-center justify-center text-2xl gap-2 md:hidden">
+
+          <button className="w-[24px] h-[24px]">
+            <GiHamburgerMenu  />
+          </button>
+            <button className="flex cursor-pointer">
+            <IoSearchSharp />
+          </button>
+          </div>
+        <div className="flex flex-2 md:flex-1 md:justify-center justify-between  items-center">
+          
           <Link href="./" className="block w-[184px] h-[46px] relative">
             <Image 
               src={logo}
@@ -25,8 +36,8 @@ const Header = () => {
             />
           </Link>
         </div>
-        <div className="">
-          <ul className="flex justify-between items-center gap-10">
+        <div className=" ">
+          <ul className="hidden md:flex justify-between items-center gap-10">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -47,11 +58,11 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-center gap-5">
-        <button className="cursor-pointer">
+        <div className="flex text-2xl flex-1 items-center justify-center gap-5">
+        <button className="hidden md:flex cursor-pointer">
           <IoSearchSharp />
         </button>
-        <button className="cursor-pointer">
+        <button className="hidden md:flex cursor-pointer">
           <FaRegUser />
         </button>
         <button className="cursor-pointer">
